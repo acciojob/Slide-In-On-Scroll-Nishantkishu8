@@ -58,10 +58,10 @@
       };
     }
 
-	  function handleslide() {
+	  function handleSlide() {
         var scrollImage = document.querySelectorAll(.slide-in);
         scrollImage.forEach((img) => {
-        var scrollHeight  = window.scrollY + window.innerHeight - img.height/2;
+        var scrollHeight  = window.scrollY + window.innerHeight - img.height / 2;
         var scrollBottom = img.offsetTop + img.height;
 
         var isfullyScroll = window.scrollY > img.scrollBottom;
@@ -76,7 +76,7 @@
         }
     });
 }
-	  Window.addEventListner('scroll',debounce(handleslide));
+	  window.addEventListener('scroll',debounce(handleSlide));
 	  }  
 
 
